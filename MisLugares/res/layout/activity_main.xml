@@ -19,7 +19,7 @@
     style="@style/EstiloTexto.Botones"
     android:textSize="@dimen/boton"
     android:text="@string/mostrar"
-    android:onClick="mostrarPreferencias"
+    android:onClick="lanzarVistaLugar"
     />
 
 <Button android:id="@+id/Button02"

@@ -55,6 +55,12 @@ public class MainActivity extends Activity {
 				+pref.getString("distancia", "?");
 		Toast.makeText(this, s, Toast.LENGTH_SHORT).show();
 	}
+	
+	public void lanzarVistaLugar(View view){
+		Intent i = new Intent(this,VistaLugar.class);
+		i.putExtra("id",(long)0);
+		startActivity(i);
+	}
 	public void salir(View view){
 		finish();
 	}

@@ -4,6 +4,7 @@ import java.util.Date;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.RatingBar.OnRatingBarChangeListener;
@@ -49,5 +50,39 @@ public class VistaLugar extends Activity {
                     lugar.setValoracion(valor);
                 }
         });
+        
+        //Ocultar elementos
+        if(lugar.getTelefono() == 0){
+        	findViewById(R.id.telefono).setVisibility(View.GONE);
+        	
+        }
+        else{
+        	telefono.setVisibility(View.VISIBLE);
+        	telefono.setText(Integer.toString(lugar.getTelefono()));
+        }
+        
+        if(lugar.getDireccion()== null || lugar.getDireccion()==""){
+        	findViewById(R.id.direccion).setVisibility(View.GONE);
+        }
+        else{
+        	direccion.setVisibility(View.VISIBLE);
+        	direccion.setText(lugar.getDireccion());
+        }
+        
+        if(lugar.getUrl()== null || lugar.getUrl()==""){
+        	findViewById(R.id.url).setVisibility(View.GONE);
+        }
+        else{
+        	url.setVisibility(View.VISIBLE);
+        	url.setText(lugar.getUrl());
+        }
+        
+        if(lugar.getComentario()==null || lugar.getComentario()==""){
+        	findViewById(R.id.comentario).setVisibility(View.GONE);
+        }
+        else{
+        	comentario.setVisibility(View.VISIBLE);
+        	comentario.setText(lugar.getComentario());
+        }
     }
 }

@@ -3,11 +3,14 @@ package com.example.mislugares;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends Activity {
@@ -56,11 +59,31 @@ public class MainActivity extends Activity {
 		Toast.makeText(this, s, Toast.LENGTH_SHORT).show();
 	}
 	
-	public void lanzarVistaLugar(View view){
+	/*public void lanzarVistaLugar(View view){
 		Intent i = new Intent(this,VistaLugar.class);
 		i.putExtra("id",(long)0);
 		startActivity(i);
+	}*/
+	
+	public void lanzarVistaLugar(View view){
+		final EditText entrada = new EditText(this);
+		entrada.setText("0");
+		new AlertDialog.Builder(this).setTitle("Selección de lugar")
+		.setMessage("indica su id:").setView(entrada)
+		.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+			
+			@Override
+			public void onClick(DialogInterface dialog, int which) {
+				// TODO Auto-generated method stub
+				long id= Long.parseLong(entrada.getText().toString());
+				Intent i = new Intent(MainActivity.this, VistaLugar.class);
+				i.putExtra("id", id);
+				startActivity(i);
+			}
+		}).setNegativeButton("Cancelar", null).show();
+			
 	}
+	
 	public void salir(View view){
 		finish();
 	}

@@ -14,6 +14,7 @@ import android.widget.RatingBar;
 import android.widget.RatingBar.OnRatingBarChangeListener;
 import android.widget.TextView;
 import android.content.DialogInterface;
+import android.content.Intent;
 
 public class VistaLugar extends Activity {
     private long id;
@@ -107,6 +108,9 @@ public class VistaLugar extends Activity {
 		case R.id.accion_llegar:
 			return true;
 		case R.id.accion_editar:
+			Intent i = new Intent(this,EdicionLugar.class);
+			i.putExtra("id", id);
+			startActivity(i);
 			return true;
 		case R.id.accion_borrar:
 			View view = new View(this);

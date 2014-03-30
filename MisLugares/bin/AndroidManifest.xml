@@ -26,6 +26,7 @@
         <activity android:name="Preferencias" android:label="Preferencias"></activity>
         <activity android:name="VistaLugar" android:label="VistaLugar">
         </activity>
+        <activity android:label="EdicionLugar" android:name="EdicionLugar"></activity>
     </application>
 
 </manifest>

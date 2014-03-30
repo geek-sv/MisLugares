@@ -3,6 +3,8 @@ import java.text.DateFormat;
 import java.util.Date;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.location.GpsStatus.Listener;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -11,6 +13,7 @@ import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.RatingBar.OnRatingBarChangeListener;
 import android.widget.TextView;
+import android.content.DialogInterface;
 
 public class VistaLugar extends Activity {
     private long id;
@@ -106,12 +109,35 @@ public class VistaLugar extends Activity {
 		case R.id.accion_editar:
 			return true;
 		case R.id.accion_borrar:
-			Lugares.borrar((int)id);
-			finish();
+			View view = new View(this);
+			lanzarcuadroConfirmacion(view);
 			return true;
 		default:
 			return super.onOptionsItemSelected(item);
 
 		}
     }
+    
+    public void lanzarcuadroConfirmacion(View view){
+    new AlertDialog.Builder(this).setTitle(R.string.titulocuadroborrar)
+    .setMessage(R.string.msjborrarlugar).setPositiveButton(R.string.positivo, new DialogInterface.OnClickListener() {
+		
+		@Override
+		public void onClick(DialogInterface dialog, int which) {
+			// TODO Auto-generated method stub
+			Lugares.borrar((int)id);
+			finish();
+			
+		}
+	}).setNegativeButton(R.string.negativo, new DialogInterface.OnClickListener() {
+		
+		@Override
+		public void onClick(DialogInterface dialog, int which) {
+			// TODO Auto-generated method stub
+			dialog.cancel();
+			
+		}
+	}).show();
+    }
+    
 }

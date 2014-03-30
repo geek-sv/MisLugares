@@ -62,4 +62,9 @@
 	<string name="comollegar">How to arrive</string>
 	<string name="editar">Edit</string>
 	<string name="borrar">Delete</string>
+	
+	<string name="titulocuadroborrar">Delete Place</string>
+	<string name="msjborrarlugar">You will sure  to want delete this place?</string>
+	<string name="positivo">OK</string>
+	<string name="negativo">Cancel</string>
 </resources>

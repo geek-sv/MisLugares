@@ -64,4 +64,9 @@
 	<string name="comollegar">Como Llegar</string>
 	<string name="editar">Editar</string>
 	<string name="borrar">Borrar</string>
+	
+	<string name="titulocuadroborrar">Borrado de Lugar</string>
+	<string name="msjborrarlugar">¿Estás seguro que quieres eliminar este lugar?</string>
+	<string name="positivo">Aceptar</string>
+	<string name="negativo">Cancelar</string>
 </resources>

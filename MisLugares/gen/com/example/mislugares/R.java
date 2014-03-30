@@ -122,6 +122,7 @@ public final class R {
         public static final int logourl=0x7f07002b;
         public static final int mislugares=0x7f070002;
         public static final int mostrar=0x7f070003;
+        public static final int msjborrarlugar=0x7f07003a;
         public static final int msjcomentario=0x7f070011;
         public static final int msjcriterioorden=0x7f07001b;
         public static final int msjdir=0x7f07000b;
@@ -133,8 +134,10 @@ public final class R {
         public static final int msjrecibiremail=0x7f07001e;
         public static final int msjtel=0x7f07000d;
         public static final int msjurl=0x7f07000f;
+        public static final int negativo=0x7f07003c;
         public static final int nombre=0x7f070007;
         public static final int nombrelugar=0x7f070030;
+        public static final int positivo=0x7f07003b;
         public static final int preferencias=0x7f070004;
         public static final int salir=0x7f070006;
         public static final int tel=0x7f07000c;
@@ -145,6 +148,7 @@ public final class R {
         public static final int titulobuscar=0x7f070015;
         public static final int tituloconfig=0x7f070013;
         public static final int titulocriterioorden=0x7f07001a;
+        public static final int titulocuadroborrar=0x7f070039;
         public static final int titulodiremail=0x7f07001f;
         public static final int titulodistancianoti=0x7f070018;
         public static final int titulonoticorreo=0x7f07001c;

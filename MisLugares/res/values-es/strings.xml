@@ -59,4 +59,9 @@
 	<string name="tipolugar">Tipo del Lugar</string>
 	<string name="urllugar">Url del Lugar</string>
 	<string name="foto">fotografía</string>
+	
+	<string name="compartir">Compartir</string>
+	<string name="comollegar">Como Llegar</string>
+	<string name="editar">Editar</string>
+	<string name="borrar">Borrar</string>
 </resources>

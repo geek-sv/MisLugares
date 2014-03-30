@@ -4,6 +4,8 @@ import java.util.Date;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RatingBar;
@@ -84,5 +86,32 @@ public class VistaLugar extends Activity {
         	comentario.setVisibility(View.VISIBLE);
         	comentario.setText(lugar.getComentario());
         }
+    }
+    
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+    	// TODO Auto-generated method stub
+    	getMenuInflater().inflate(R.menu.vista_lugar, menu);
+    	return true;
+    }
+    
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+    	switch (item.getItemId()) {
+		case R.id.accion_compartir:
+			 return true;
+		case R.id.accion_llegar:
+			return true;
+		case R.id.accion_editar:
+			return true;
+		case R.id.accion_borrar:
+			Lugares.borrar((int)id);
+			finish();
+			return true;
+		default:
+			return super.onOptionsItemSelected(item);
+
+		}
     }
 }

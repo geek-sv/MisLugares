@@ -53,6 +53,10 @@ public final class R {
         public static final int Button03=0x7f0a0003;
         public static final int Button04=0x7f0a0004;
         public static final int TextView01=0x7f0a0000;
+        public static final int accion_borrar=0x7f0a0023;
+        public static final int accion_compartir=0x7f0a0020;
+        public static final int accion_editar=0x7f0a0022;
+        public static final int accion_llegar=0x7f0a0021;
         public static final int acercaDe=0x7f0a001e;
         public static final int comentario=0x7f0a0010;
         public static final int config=0x7f0a001d;
@@ -89,16 +93,21 @@ public final class R {
     }
     public static final class menu {
         public static final int main=0x7f090000;
+        public static final int vista_lugar=0x7f090001;
     }
     public static final class string {
         public static final int acerca=0x7f070005;
         public static final int action_settings=0x7f070001;
         public static final int app_name=0x7f070000;
+        public static final int borrar=0x7f070038;
         public static final int comenlugar=0x7f070023;
         public static final int comentario=0x7f070010;
         public static final int comentarioacerdade=0x7f070012;
+        public static final int comollegar=0x7f070036;
+        public static final int compartir=0x7f070035;
         public static final int direccion=0x7f07000a;
         public static final int dirlugar=0x7f070024;
+        public static final int editar=0x7f070037;
         public static final int fecha=0x7f070025;
         public static final int foto=0x7f070034;
         public static final int hora=0x7f070026;
@@ -174,7 +183,6 @@ public final class R {
         public static final int AppTheme=0x7f080001;
         public static final int EstiloTexto=0x7f080002;
         public static final int EstiloTexto_Botones=0x7f080003;
-        public static final int TemaAsteroides=0x7f080004;
     }
     public static final class xml {
         public static final int preferencias=0x7f040000;

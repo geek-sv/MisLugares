@@ -57,4 +57,9 @@
 	<string name="tipolugar">Place \'s Type</string>
 	<string name="urllugar">Place \'s Url</string>
 	<string name="foto">photography</string>
+	
+	<string name="compartir">Share</string>
+	<string name="comollegar">How to arrive</string>
+	<string name="editar">Edit</string>
+	<string name="borrar">Delete</string>
 </resources>

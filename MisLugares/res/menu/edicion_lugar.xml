@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item 
+        android:id="@+id/accion_cancelaredicion"
+        android:title="@string/negativo"
+        android:orderInCategory="10"
+        android:showAsAction="ifRoom"/>
+    
+    <item 
+        android:id="@+id/accion_guardaredicion"
+        android:title="@string/guardar"
+        android:orderInCategory="20"
+        android:showAsAction="ifRoom"/>
+     
+    
+
+</menu>

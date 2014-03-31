@@ -69,4 +69,6 @@
 	<string name="msjborrarlugar">¿Estás seguro que quieres eliminar este lugar?</string>
 	<string name="positivo">Aceptar</string>
 	<string name="negativo">Cancelar</string>
+	
+	<string name="guardar">Guardar</string>
 </resources>

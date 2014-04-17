@@ -66,4 +66,12 @@ public class Lugares {
           return lugares;
 
     }
+    
+    static List<String> listaNombres(){
+    	ArrayList<String> resultado = new ArrayList<String>();
+    	for(Lugar lugar:vectorLugares){
+    		resultado.add(lugar.getNombre());
+    	}
+    	return resultado;
+    }
   }

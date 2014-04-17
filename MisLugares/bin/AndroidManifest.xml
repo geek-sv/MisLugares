@@ -28,5 +28,6 @@
         </activity>
         <activity android:label="EdicionLugar" android:name="EdicionLugar"></activity>
     </application>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
 </manifest>

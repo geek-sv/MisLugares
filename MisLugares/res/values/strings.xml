@@ -69,4 +69,7 @@
 	<string name="negativo">Cancel</string>
 	
 	<string name="guardar">Save</string>
+	<string name="nolugares">Not have Places</string>
+	
+	
 </resources>

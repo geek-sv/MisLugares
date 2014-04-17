@@ -63,19 +63,19 @@ public final class R {
         public static final int comentario=0x7f0a0010;
         public static final int config=0x7f0a001f;
         public static final int direccion=0x7f0a000a;
-        public static final int fecha=0x7f0a0018;
-        public static final int foto=0x7f0a001c;
-        public static final int hora=0x7f0a001a;
-        public static final int logo_comentario=0x7f0a0016;
-        public static final int logo_direccion=0x7f0a0013;
-        public static final int logo_fecha=0x7f0a0017;
-        public static final int logo_hora=0x7f0a0019;
-        public static final int logo_telefono=0x7f0a0014;
-        public static final int logo_tipo=0x7f0a0012;
-        public static final int logo_url=0x7f0a0015;
+        public static final int fecha=0x7f0a001a;
+        public static final int foto=0x7f0a0011;
+        public static final int hora=0x7f0a001c;
+        public static final int logo_comentario=0x7f0a0018;
+        public static final int logo_direccion=0x7f0a0015;
+        public static final int logo_fecha=0x7f0a0019;
+        public static final int logo_hora=0x7f0a001b;
+        public static final int logo_telefono=0x7f0a0016;
+        public static final int logo_tipo=0x7f0a0014;
+        public static final int logo_url=0x7f0a0017;
         public static final int menu_buscar=0x7f0a0021;
         public static final int nombre=0x7f0a0006;
-        public static final int scrollView1=0x7f0a0011;
+        public static final int scrollView1=0x7f0a0013;
         public static final int t_comentario=0x7f0a000f;
         public static final int t_direccion=0x7f0a0009;
         public static final int t_nombre=0x7f0a0005;
@@ -85,13 +85,14 @@ public final class R {
         public static final int telefono=0x7f0a000c;
         public static final int tipo=0x7f0a0008;
         public static final int url=0x7f0a000e;
-        public static final int valoracion=0x7f0a001b;
+        public static final int valoracion=0x7f0a0012;
     }
     public static final class layout {
         public static final int acercade=0x7f030000;
         public static final int activity_main=0x7f030001;
         public static final int edicion_lugar=0x7f030002;
-        public static final int vista_lugar=0x7f030003;
+        public static final int elemento_lista=0x7f030003;
+        public static final int vista_lugar=0x7f030004;
     }
     public static final class menu {
         public static final int edicion_lugar=0x7f090000;
@@ -139,6 +140,7 @@ public final class R {
         public static final int msjtel=0x7f07000d;
         public static final int msjurl=0x7f07000f;
         public static final int negativo=0x7f07003c;
+        public static final int nolugares=0x7f07003e;
         public static final int nombre=0x7f070007;
         public static final int nombrelugar=0x7f070030;
         public static final int positivo=0x7f07003b;

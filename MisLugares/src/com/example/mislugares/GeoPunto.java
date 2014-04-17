@@ -27,4 +27,12 @@ public class GeoPunto {
 		double c=2*Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
 		return RADIO_TIERRA*c;
 	}
+	
+	public double getLatitud(){
+		return latitud;
+	}
+	
+	public double getLongitud(){
+		return longitud;
+	}
 }

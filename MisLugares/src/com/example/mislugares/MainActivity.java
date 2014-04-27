@@ -5,6 +5,7 @@ import android.app.ListActivity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.Menu;
@@ -17,14 +18,18 @@ import android.widget.Toast;
 
 public class MainActivity extends ListActivity {
 	public BaseAdapter adaptador;
+	public MediaPlayer mp;
+	
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		mp = MediaPlayer.create(this,R.raw.audio);
 		//adaptador = new ArrayAdapter<String>(this, R.layout.elemento_lista,R.id.nombre,Lugares.listaNombres());
 		adaptador= new AdaptadorLugares(this);
 		setListAdapter(adaptador);
+		
 	}
 
 	@Override
@@ -46,6 +51,26 @@ public class MainActivity extends ListActivity {
 			break;
 		}
 		return true;
+	}
+	
+	@Override
+	protected void onSaveInstanceState(Bundle outState) {
+		// TODO Auto-generated method stub
+		super.onSaveInstanceState(outState);
+		if(mp!=null){
+			int pos=mp.getCurrentPosition();
+			outState.putInt("posicion", pos);
+		}
+	}
+	
+	@Override
+	protected void onRestoreInstanceState(Bundle state) {
+		// TODO Auto-generated method stub
+		super.onRestoreInstanceState(state);
+		if(state != null && mp !=null){
+			int pos= state.getInt("posicion");
+			mp.seekTo(pos);
+		}
 	}
 	
 	public void lanzarAcercaDe(View view){
@@ -102,5 +127,31 @@ public class MainActivity extends ListActivity {
 	public void salir(View view){
 		finish();
 	}
+	
+	@Override
+	protected void onPause() {
+		// TODO Auto-generated method stub
+		super.onPause();
+		mp.stop();
+		
+	}
+	
+	@Override
+	protected void onResume() {
+		super.onResume();
+		mp.start();
+		
+	}
+	
+	
+	
+	@Override
+	protected void onDestroy() {
+		// TODO Auto-generated method stub
+		super.onDestroy();
+		mp.release();
+		
+	}
+	
 
 }
